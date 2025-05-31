@@ -1,0 +1,112 @@
+
+.cuadro-rosa-pastel {
+    position: relative;
+    width: 900px;
+    height: 1000px;
+    background-color: #fff7fc; /* rosa pastel */
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 50px solid #f48fb1;
+    
+    margin: 20px auto;
+    overflow: hidden;
+    padding-top: 0;
+    /* Fondo de imagen */
+    background-image: none;
+    background-size: 600px; /* o cover, según prefieras */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* eliminado opacity: 1; */
+}
+.linea {
+    width: 100%;
+    height: 10px;
+    background-color: #f48fb1; /* rosa pastel */
+    margin: 20px 0;
+}
+
+.cuadro-rosa-pastel img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+    opacity: 0.5; /* 0 = totalmente transparente, 1 = opaco */
+}
+.titulo-acta {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: #ad1457;
+    font-family: 'Playfair Display', serif;
+}
+.texto-acta {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    color: #ad1457;
+    font-family: 'Playfair Display', serif;
+    line-height: 0.9;
+}
+.cuadro-rosa-pastel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('kitty2.png');
+    background-size: contain; /* o cover */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; /* Cambia este valor para ajustar la transparencia */
+    z-index: 0;
+    pointer-events: none;
+}
+.firmas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra contenido horizontalmente */
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.fila-superior {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* separa la firma 1 y 2 */
+}
+
+.fila-inferior {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centra la firma 3 */
+}
+
+.firma {
+  font-size: 1.8rem;
+  color: #ad1457;
+  text-align: center;
+  min-width: 200px;
+}
+.decoracion {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.esquina-izquierda {
+    bottom: 20px;
+    left: 20px;
+}
+
+.esquina-derecha {
+    bottom: 20px;
+    right: 20px;
+}
